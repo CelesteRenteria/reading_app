@@ -25,9 +25,9 @@ class HomeScreen extends StatelessWidget {
                 const Spacer(),
                 IconButton(onPressed: (){}, icon: Icon(Icons.menu, color: ColorsApp.secondary,size: 40.0,))              ],
             ),
-            SectionsHome(title: 'Mis Lecturas'),
-            SectionsHome(title: 'Pendientes'),
-            SectionsHome(title: 'Autores'),
+            const SectionsHome(title: 'Mis Lecturas'),
+            const SectionsHome(title: 'Pendientes'),
+            const SectionsHome(title: 'Autores'),
             CustomButton(color: Theme.of(context).secondaryHeaderColor, 
             borde: Colors.transparent, text: 'MIS ESTADÍSTICAS')
           ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../assets/images/imagesApp.dart';
+import '../assets/images/images_app.dart';
 
 class Background extends StatelessWidget {
   final Widget content;

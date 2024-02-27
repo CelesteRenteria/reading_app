@@ -26,8 +26,8 @@ class SectionsHome extends StatelessWidget {
                   height:(title == 'Autores')?100: 150,
                   width: 300,
                   child: SectionCardsList(title: title)),
-              SpaceHorizontal(10),
-              AddButton()
+              const SpaceHorizontal(10),
+              const AddButton()
             ],
           ),
         ],
