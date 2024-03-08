@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AddButton extends StatelessWidget {
-  const AddButton({super.key});
+  final Function() function;
+  const AddButton({
+    required this.function,
+    super.key});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: function,
       child: Container(
         decoration: BoxDecoration(
           shape: BoxShape.circle,

@@ -33,18 +33,23 @@ class FontsApp {
   //Cuerpo
     static TextStyle avenirNegro = TextStyle(
       fontFamily: 'Avenir',
-       fontSize: 25.sp,
+       fontSize: 30.sp,
        color: ColorsApp.tertiary
+       );
+    static TextStyle hintText = TextStyle(
+      fontFamily: 'Avenir',
+       fontSize: 30.sp,
+       color: ColorsApp.disable
        );
     static TextStyle avenirWhite = TextStyle(
       fontFamily: 'Avenir',
-       fontSize: 25.sp,
+       fontSize: 30.sp,
        color: Colors.white,
        fontWeight: FontWeight.w800
        );
     static TextStyle avenirPrimary = TextStyle(
       fontFamily: 'Avenir',
-       fontSize: 25.sp,
+       fontSize: 30.sp,
        color: ColorsApp.primary
        );
 

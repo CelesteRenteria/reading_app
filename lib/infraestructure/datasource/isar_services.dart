@@ -20,4 +20,19 @@ class IsarService {
     }
     return Future.value(Isar.getInstance());
   }
+
+  Future<void> saveBook(Booksc newBook)async{
+    final isar = await db;
+    isar.writeTxnSync(() => isar.bookscs.putSync(newBook));
+  }
+
+  Future<void> saveAuthor(AuthorsCollection newAuthor)async{
+    final isar = await db;
+    isar.writeTxnSync(() => isar.authorsCollections.putSync(newAuthor));
+  }
+
+  Future<void> saveNote (NotesCollection newNote)async{
+    final isar = await db;
+    isar.writeTxnSync(() => isar.notesCollections.putSync(newNote));
+  }
 }

@@ -7,7 +7,11 @@ import '../buttons/add_button.dart';
 
 class SectionsHome extends StatelessWidget {
   final String title;
-  const SectionsHome({required this.title, super.key});
+  final Function() addElement;
+  const SectionsHome({
+  required this.title,
+  required this.addElement,
+   super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +31,9 @@ class SectionsHome extends StatelessWidget {
                   width: 300,
                   child: SectionCardsList(title: title)),
               const SpaceHorizontal(10),
-              const AddButton()
+               AddButton(
+                function: addElement,
+              )
             ],
           ),
         ],

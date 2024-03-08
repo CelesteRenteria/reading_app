@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
               locale: const Locale('es'),
               theme: firstTheme);
         },
-        child: const HomeScreen()
+        child: HomeScreen()
         //const ScreenOfScreens(),
         );
   }

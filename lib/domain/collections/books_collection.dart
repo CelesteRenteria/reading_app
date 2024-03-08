@@ -18,6 +18,7 @@ class Booksc{
   bool? relectura;
   int? calificacion;
   bool? reading;
+  String? status;
   String? image;
 
   @Backlink(to: "book")

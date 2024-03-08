@@ -9,17 +9,15 @@ class Background extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Container(
-                decoration: const BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage(ImagesApp.fondo),
-                        fit: BoxFit.cover)),
-              ),
-              content
-              ]
-      ),
+      resizeToAvoidBottomInset: false,
+      body: Stack(children: [
+        Container(
+          decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(ImagesApp.fondo), fit: BoxFit.cover)),
+        ),
+        content
+      ]),
     );
   }
 }
